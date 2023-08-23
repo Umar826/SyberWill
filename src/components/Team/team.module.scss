@@ -1,0 +1,76 @@
+/* Team */
+
+.subtytle {
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    padding-top: 230px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 30px;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.block {
+    background-color: #FFFFFF;
+    width: 560px;
+    height: 185px;
+    padding-left: 20px;
+    border-radius: 25px;
+}
+
+.subtytleLeft {
+    color: #1F1F1F;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subtytleRight {
+    color: #03E7D9;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.underBlock {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title {
+    color: #1F1F1F;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.image {
+    margin: 0 auto;
+    margin-bottom: 25px;
+}

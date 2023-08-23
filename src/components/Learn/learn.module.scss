@@ -1,0 +1,88 @@
+/* Learn */
+
+.learn {
+
+}
+
+.subtytle {
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    padding-top: 85px;
+}
+
+.block {
+    display: flex;
+    gap: -10rem;
+}
+
+.blockOne {
+    background: #FFFFFF4D;
+    width: 337px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.flex {
+    display: flex;
+    gap: 9rem;
+    margin-top: 30px;
+}
+
+.cyrcle {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #03E7D9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.title {
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.smallTitle {
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.blockTwo {
+    background: #FFFFFF4D;
+    width: 337px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.blockThree {
+    background: #FFFFFF4D;
+    width: 337px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
