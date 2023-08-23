@@ -15,15 +15,13 @@
 .flex {
     display: flex;
     margin: 0 auto;
+    max-width: 50%;
+    gap: 5rem;
+    padding-top: 40px;
 }
 
 .flexButton {
     display: flex;
-    gap: 2rem;
-    width: 156px;
-    height: 55px;
-    top: 1469px;
-    left: 322px;
     padding: 15px 30px 15px 30px;
     border-radius: 50px;
     border: 1px;
@@ -31,17 +29,11 @@
     border: 1px solid;
     color: #03E7D9;
     border-color: #03E7D9;
-    border-image-source: linear-gradient(149.74deg, #03E7D9 7.98%, #C9C9C9 92.63%);
     font-family: Sora;
     font-size: 20px;
     font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    border-radius: 50%;
     background-color: transparent;
     background-repeat: no-repeat;
-    border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;

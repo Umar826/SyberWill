@@ -6,7 +6,10 @@ const Contacts = () => {
         <section>
             <h1 className={styles.subtytle}>Contacts</h1>
             <div className={styles.flex}>
-                <button><div className={styles.flexButton}>Email <img src='./img/envelope.png'></img></div></button>
+                <button className={styles.flexButton}>Email <img src='./img/envelope.png' /></button>
+                <button className={styles.flexButton}>Telegram <img src='./img/envelope (1).png' /></button>
+                <button className={styles.flexButton}>Twitter <img src='./img/envelope (2).png' /></button>
+                <button className={styles.flexButton}>Discord <img src='./img/envelope (3).png' /></button>
             </div>
         </section>
     )

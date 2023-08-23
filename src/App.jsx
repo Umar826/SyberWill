@@ -4,6 +4,8 @@ import Solution from "./components/Solution";
 import Learn from "./components/Learn";
 import Team from "./components/Team";
 import Contacts from "./Contacts";
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 import './styles/style.scss'
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Learn />
       <Team />
       <Contacts />
+      <Pricing />
+      <Footer />
     </div>
     </>
   );
