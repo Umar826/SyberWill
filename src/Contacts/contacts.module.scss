@@ -15,8 +15,9 @@
 .flex {
     display: flex;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 1000px;
     gap: 5rem;
+    justify-content: center;
     padding-top: 40px;
 }
 
@@ -34,6 +35,28 @@
     font-weight: 700;
     background-color: transparent;
     background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.flexButton:hover {
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    border-radius: 50px;
+    border: 1px;
+    gap: 15px;
+    border: 1px solid;
+    color: black;
+    border-color: #03E7D9;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-color: #03E7D9;
     cursor: pointer;
     overflow: hidden;
     outline: none;

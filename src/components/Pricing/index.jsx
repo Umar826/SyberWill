@@ -1,49 +1,32 @@
 import styles from './pricing.module.scss'
+import image1 from '../../itemImg/add 1.png'
+import image2 from '../../itemImg/sack.png'
+import PricingItem from './PricingItem';
+import PricingForm from './PricingForm';
 import React from 'react';
+
+const pricingData = [
+    {
+        icon: image1, subtitle: "Additional Service", 
+        title1: "Lorem ipsum dolor sit amet consectetur.", title2: "Lorem ipsum dolor sit amet consectetur. At odio quisque feugiat lorem eget tincidunt orci pellentesque.", 
+        title3: "Lorem ipsum dolor sit amet ", price: "200 USDT",
+    },
+    {
+        icon: image2, subtitle: "Subscription", 
+        title1: "Lorem ipsum dolor sit amet consectetur.", title2: "Lorem ipsum dolor sit amet consectetur. At odio quisque feugiat lorem eget tincidunt orci pellentesque.", 
+        title3: "Lorem ipsum dolor sit amet ", price: "300 USDT/month",
+    }
+]
 
 const Pricing = () => {
     return(
         <section>
             <h1 className={styles.subtytle}>Pricing</h1>
             <div className={styles.flex}>
-                <div className={styles.block}>
-                    <div className={styles.cyrcle}>
-                        <img src="./img/add 1.png" />
-                    </div>
-                    <h1 className={styles.blockSubtytle}>Additional Service</h1>
-                    <div className={styles.line}></div>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet<br/> consectetur.</p>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet<br/> consectetur. At odio quisque<br/> feugiat lorem eget tincidunt<br/> orci pellentesque.</p>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet </p>
-                    <h1 className={styles.price}>200 USDT</h1>
-                </div>
-                <div className={styles.blockOne}>
-                    <div className={styles.cyrcle}>
-                        <img src="./img/sack.png" />
-                    </div>
-                    <h1 className={styles.blockSubtytle}>Subscription</h1>
-                    <div className={styles.line}></div>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet<br/> consectetur.</p>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet<br/> consectetur. At odio quisque<br/> feugiat lorem eget tincidunt<br/> orci pellentesque.</p>
-                    <p className={styles.title}>Lorem ipsum dolor sit amet </p>
-                    <h1 className={styles.price}>300 USDT/month</h1>
-                </div>
-                <div className={styles.blockBorder}>
-                    <div className={styles.cyrcle}>
-                        <img src="./img/Frame 93.png" />
-                    </div>
-                    <h1 className={styles.blockSubtytle}>We are open to offers</h1>
-                    <div className={styles.line}></div>
-                    <input type="text" placeholder="Your email" className={styles.email}/>
-                    <input type="text" placeholder="Describe your idea" className={styles.input}/>
-                    <div className={styles.underBlock}>
-                        <div className={styles.grid}>
-                            <button className={styles.pointButton} />
-                            <p className={styles.underTitle}><a className={styles.span}>privacy policy</a> agreement</p>
-                        </div>
-                        <button className={styles.sendInput}>Send</button>
-                    </div>
-                </div>
+                { pricingData.map((item => {
+                    return <PricingItem icon={item.icon} subtitle={item.subtitle} title1={item.title1} title2={item.title2} title3={item.title3} price={item.price} />
+                }))}
+                <PricingForm />
             </div>
         </section>
     )

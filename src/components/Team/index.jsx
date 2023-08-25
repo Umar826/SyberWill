@@ -1,31 +1,26 @@
 import styles from './team.module.scss'
+import TeamItem from './TeamItem';
+import image1 from '../../itemImg/Component 5.png'
+import image2 from '../../itemImg/Component 6.png'
 import React from 'react';
+
+const teamData = [
+    {
+        icon: image1, subtitle: "Serg Ruden", title: "CEO and Founder", text: "Serg is an investor and serial entrepreneur. Serg has more than 10 years of experience in international marketing agencies and in the fintech industry. Since 2015, he has been heavily engaged in private investment, development and strategic consulting of projects.", 
+    },
+    {
+        icon: image2, subtitle: "Ramin Mikailov", title: "CBDO and Co-Founder", text: "Ramin is cybersecurity expert with more than 14 year of experience in many large companies. Since 2016 he has deeply immersed in business development and strategic management a lot of digital projects.", 
+    },
+]
 
 const Team = () => {
     return(
         <section>
             <h1 className={styles.subtytle}>Team</h1>
             <div className={styles.flex}>
-                <div className={styles.grid}>
-                    <img src='./img/Component 5.png' className={styles.image}></img>
-                    <div className={styles.block}>
-                        <div className={styles.underBlock}>
-                            <h1 className={styles.subtytleLeft}>Serg Ruden</h1>
-                            <h1 className={styles.subtytleRight}>CEO and Founder</h1>
-                        </div>
-                        <p className={styles.title}>Serg is an investor and serial entrepreneur. Serg has more than <br/>10 years of experience in international marketing agencies and<br/> in the fintech industry. Since 2015, he has been heavily<br/> engaged in private investment, development and strategic<br/> consulting of projects.</p>
-                    </div>
-                </div>
-                <div className={styles.grid}>
-                    <img src='./img/Component 6.png' className={styles.image}></img>
-                    <div className={styles.block}>
-                        <div className={styles.underBlock}>
-                            <h1 className={styles.subtytleLeft}>Ramin Mikailov</h1>
-                            <h1 className={styles.subtytleRight}>CBDO and Co-Founder</h1>
-                        </div>
-                        <p className={styles.title}>Ramin is cybersecurity expert with more than 14 year of<br/> experience in many large companies. Since 2016 he has<br/> deeply immersed in business development and strategic<br/> management a lot of digital projects.</p>
-                    </div>
-                </div>
+                { teamData.map((item => {
+                    return <TeamItem icon={item.icon} subtitle={item.subtitle} title={item.title} text={item.text} />
+                }))}
             </div>
         </section>
     )

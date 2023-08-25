@@ -1,49 +1,36 @@
 import styles from './aboutus.module.scss'
+import AboutItem from './AboutItem';
+import image1 from '../../itemImg/forward1.png'
+import image2 from '../../itemImg/link1.png'
+import image3 from '../../itemImg/work-svgrepo-com.png'
+import image4 from '../../itemImg/box.png'
 import React from 'react';
+
+const aboutData = [
+    {
+        icon: image1, title: "Company", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+    },
+    {
+        icon: image2, title: "Referal", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+    },
+    {
+        icon: image3, title: "Careers", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+    },
+    {
+        icon: image4, title: "Docs", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+    }
+]
 
 const About = () => {
     return(
         <section className={styles.aboutUs}>
             <div className={styles.overBlock}>
                 <div className={styles.underBlock}>
-                    <div className={styles.block}>
-                        <div className={styles.cyrcle}>
-                            <img src="./img/Forward 1.png" />
-                        </div>
-                        <h1>Company</h1>
-                        <p>Lorem ispum dolor sit amet <br/>consectetur. Pulvinar</p>
-                    </div>
-                    <div className={styles.block}>
-                        <div className={styles.cyrcle}>
-                            <img src="./img/link1.png" />
-                        </div>
-                        <h1>Referal</h1>
-                        <p>Lorem ispum dolor sit amet <br/>consectetur. Pulvinar</p>
-                    </div>
-                </div>
-                <div className={styles.underBlock}>
-                    <div className={styles.block}>
-                        <div className={styles.cyrcle}>
-                            <img src="./img/work-svgrepo-com.png" />
-                        </div>
-                        <h1>Careers</h1>
-                        <p>Lorem ispum dolor sit amet <br/>consectetur. Pulvinar</p>
-                    </div>
-                    <div className={styles.block}>
-                        <div className={styles.cyrcle}>
-                            <img src="./img/box.png" />
-                        </div>
-                        <h1>Docs</h1>
-                        <p>Lorem ispum dolor sit amet <br/>consectetur. Pulvinar</p>
-                    </div>
+                    { aboutData.map((item => {
+                        return <AboutItem icon={item.icon} title={item.title} text={item.text} />
+                    }))}
                 </div>
             </div>
-            <img src="./img/Frame 20.png" className={styles.absoluteImageOne}/>
-            <img src="./img/Frame 21 (1).png" className={styles.absoluteImageTwo}/>
-            <img src="./img/Frame 18.png" className={styles.absoluteImageThree}/>
-            <img src="./img/polygon 16.png" className={styles.absoluteImageFour}/>
-            <img src="./img/polygon 16.png" className={styles.absoluteImageFive}/>
-            <img src="./img/polygon 16.png" className={styles.absoluteImageSix}/>
             <button className={styles.absoluteButton}>About Us</button>
         </section>
     )

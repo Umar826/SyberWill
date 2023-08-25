@@ -6,10 +6,10 @@ const Contacts = () => {
         <section>
             <h1 className={styles.subtytle}>Contacts</h1>
             <div className={styles.flex}>
-                <button className={styles.flexButton}>Email <img src='./img/envelope.png' /></button>
-                <button className={styles.flexButton}>Telegram <img src='./img/envelope (1).png' /></button>
-                <button className={styles.flexButton}>Twitter <img src='./img/envelope (2).png' /></button>
-                <button className={styles.flexButton}>Discord <img src='./img/envelope (3).png' /></button>
+                <a href='#'><button className={styles.flexButton}>Email <img src='./img/envelope.png' /></button></a>
+                <a href='#'><button className={styles.flexButton}>Telegram <img src='./img/envelope (1).png' /></button></a>
+                <a href='#'><button className={styles.flexButton}>Twitter <img src='./img/envelope (2).png' /></button></a>
+                <a href='#'><button className={styles.flexButton}>Discord <img src='./img/envelope (3).png' /></button></a>
             </div>
         </section>
     )
