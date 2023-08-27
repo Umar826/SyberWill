@@ -13,7 +13,7 @@
     text-align: center;
     margin: 0 auto;
     color: #FFFFFF;
-    padding-top: 85px;
+    padding-top: 115px;
 }
 
 .block {
@@ -31,6 +31,18 @@
 }
 
 .flex {
+    display: flex;
+    gap: 9rem;
+    margin-top: 30px;
+}
+
+.flexOne {
+    display: flex;
+    gap: 9rem;
+    margin-top: 30px;
+}
+
+.flexTwo {
     display: flex;
     gap: 9rem;
     margin-top: 30px;
@@ -85,4 +97,55 @@
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 160px;
+}
+
+.adaptiveImage {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        display: grid;
+    }
+    .blockOne {
+        margin-top: 30px;
+        width: 300px;
+        padding: 0 30px;
+    }
+    .blockTwo {
+        margin-top: 20px;
+        width: 300px;
+        padding: 0 30px;
+    }
+    .blockThree {
+        margin-top: 20px;
+        width: 300px;
+        padding: 0 30px;
+    }
+    .title {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .smallTitle {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .flex {
+        justify-content: right;
+        gap: 3.7rem;
+    }
+    .flexOne {
+        justify-content: left;
+        gap: 1.8rem;
+    }
+    .flexTwo {
+        justify-content: right;
+        gap: 2.3rem;
+    }
+    .adaptiveImage {
+        display: block;
+    }
+    .adaptiveImageNone {
+        display: none;
+    }
 }

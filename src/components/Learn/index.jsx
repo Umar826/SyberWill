@@ -19,18 +19,19 @@ const Learn = () => {
                 </div>
 
                 <div className={styles.blockTwo}>
-                    <div className={styles.flex}>
+                    <div className={styles.flexOne}>
+                        <img src="./img/Frame 19 (1).png" className={styles.adaptiveImage}/>
                         <div className={styles.cyrcle}>
                             <img src="./img/Vector (9).png" />
                         </div>
-                        <img src="./img/Frame 19 (1).png" />
+                        <img src="./img/Frame 19 (1).png" className={styles.adaptiveImageNone}/>
                     </div>
                     <h1 className={styles.title}>Blog FQ</h1>
                     <p className={styles.smallTitle}>Lorem ipsum dolor sit amet<br/> consectetur. Rhoncus<br/> tincidunt sapien volutpat</p>
                 </div>
 
                 <div className={styles.blockThree}>
-                    <div className={styles.flex}>
+                    <div className={styles.flexTwo}>
                         <div className={styles.cyrcle}>
                             <img src="./img/circle-user (1) (1).png" />
                         </div>

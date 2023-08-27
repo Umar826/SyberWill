@@ -9,7 +9,7 @@
     text-align: center;
     margin: 0 auto;
     color: #FFFFFF;
-    padding-top: 230px;
+    padding-top: 100px;
 }
 
 .flex {
@@ -60,4 +60,17 @@
     cursor: pointer;
     overflow: hidden;
     outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    .flex {
+        gap: 2rem;
+        display: grid;
+    }
+    .flexButton {
+        margin: 0 auto;
+    }
+    .subtytle {
+        padding-top: 80px;
+    }
 }

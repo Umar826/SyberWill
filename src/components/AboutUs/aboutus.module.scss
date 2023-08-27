@@ -4,7 +4,7 @@
     max-width: 100%;
     height: 890px;
     background-color: white;
-    background-image: url('../../../public/img/Без-имени-1.png');
+    background-image: url('../../../public/img/aboutBack.png');
     background-position: center center;      
     background-repeat: no-repeat;   
     background-size: cover;      
@@ -96,5 +96,17 @@
     letter-spacing: 0em;
     text-align: center;
     position: absolute;
-    left: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+    .aboutUs {
+        height: 940px;
+        background-image: url('../../../public/img/phone123.png');
+    }
+    .underBlock {
+        gap: 1rem;
+        margin-top: 50px;
+    }
 }

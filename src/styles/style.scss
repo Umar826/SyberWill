@@ -8,12 +8,20 @@ body {
 .pureBlock {
     background-image: url('../../public/img/Rectangle-123-_2_.png');
     max-width: 100%;
-    height: 2900px;     
+    height: 2850px;     
     background-repeat: no-repeat;   
-    background-size: cover;      
+    background-size: cover;   
+    background-position: center center;   
     margin: 0 auto;
 }
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .pureBlock {
+        background-image: url('../../public/img/Rectangle-123-_3_.png');
+        height: 4600px;
+    }
 }

@@ -9,13 +9,13 @@
     text-align: center;
     margin: 0 auto;
     color: #FFFFFF;
-    padding-top: 130px;
+    padding-top: 150px;
 }
 
 .flex {
     display: flex;
     margin: 0 auto;
-    max-width: 55%;
+    justify-content: center;
     gap: 5rem;
     padding-top: 40px;
 }
@@ -66,4 +66,14 @@
     display: flex;
     margin: 0 auto;
     gap: 1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    .flex {
+        gap: 1rem;
+        display: grid;
+    }
+    .subtytle {
+        padding-top: 80px;
+    }
 }

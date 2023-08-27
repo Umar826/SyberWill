@@ -9,7 +9,7 @@
     text-align: center;
     margin: 0 auto;
     color: #FFFFFF;
-    padding-top: 230px;
+    padding-top: 190px;
 }
 
 .flex {
@@ -21,4 +21,13 @@
 .image {
     margin: 0 auto;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .flex {
+        display: none;
+    }
+    .subtytle {
+        padding-top: 80px;
+    }
 }

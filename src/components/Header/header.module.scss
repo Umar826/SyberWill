@@ -123,3 +123,9 @@ header {
     top: 34%;
     left: 28%;
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+}

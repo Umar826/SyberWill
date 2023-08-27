@@ -1,0 +1,48 @@
+/* TeamAdaptive */
+
+.block {
+    display: grid;
+    justify-content: center;
+    gap: 1.3rem;
+    display: none;
+}
+
+.underBlock {
+    padding: 30px;
+    width: 298px; 
+    height: 376px; 
+    background-color: white;
+    border-radius: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+}
+
+.title {
+    color: #03E7D9;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.text {    
+    color: #1F1F1F;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.gap {
+    display: grid;
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        display: block;
+    }
+}
+

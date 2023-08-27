@@ -7,6 +7,7 @@ import Contacts from "./Contacts";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import './styles/style.scss'
+import TeamAdaptive from "./components/Team/TeamAdaptive";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <div className="pureBlock">
       <Learn />
       <Team />
+      <TeamAdaptive />
       <Contacts />
       <Pricing />
       <Footer />
