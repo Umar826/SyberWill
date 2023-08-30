@@ -1,0 +1,14 @@
+.headButton {
+    margin: 0 auto;
+    margin-left: 38%;
+    margin-top: 5%;
+    width: 180px;
+    height: 140px;
+    border-radius: 112px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border: 5px solid #FFFFFF80;
+    box-shadow: -18.600000381469727px 18.600000381469727px 18.600000381469727px 0px #FFFFFF1A inset;
+    box-shadow: 18.600000381469727px -18.600000381469727px 18.600000381469727px 0px #A5A5A51A inset;
+    cursor: pointer;
+}

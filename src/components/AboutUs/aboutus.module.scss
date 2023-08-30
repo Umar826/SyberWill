@@ -31,7 +31,7 @@
     margin: 0 auto;
     display: flex;
     gap: 14rem;
-    margin-top: 135px;
+    margin-top: 125px;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1120px;
@@ -108,5 +108,17 @@
     .underBlock {
         gap: 1rem;
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .underBlock {
+        gap: 9rem;
+    }
+}
+
+@media screen and (max-width: 1466px) {
+    .underBlock {
+        gap: 7rem;
     }
 }

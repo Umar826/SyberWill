@@ -1,4 +1,5 @@
 import styles from './header.module.scss'
+import HeaderButton from './HeaderButton';
 import React from 'react';
 
 const Header = () => {
@@ -21,12 +22,23 @@ const Header = () => {
             <div className={styles.nameBlock}>
                 <h1 className={styles.subtitle}>Platform for secure storage and inheritance of digital assets</h1>
                 <p className={styles.title}>Lorem ipsum dolor sit amet consectetur. Rhoncus tincidunt sapien volutpat</p>
-                <button className={styles.headButton}></button>
+                <HeaderButton />
             </div>
 
+            
+            <div className={styles.backgroundImageBig}>
+            <div class="corner left"></div>
+            <div class="corner right"></div>
+            </div>
+            <div className={styles.backgroundImageMid}>
+            <div class="corner left"></div>
+            <div class="corner right"></div>
+            </div>
+            <div className={styles.backgroundImageBig}>
+            <div class="corner left"></div>
+            <div class="corner right"></div>
+            </div>
             <img src="./img/155.png" className={styles.backgroundImage}/>
-            <img src="./img/Big.png" className={styles.backgroundImageBig}/>
-            <img src="./img/Mid.png" className={styles.backgroundImageMid}/>
             <img src="./img/Small.png" className={styles.backgroundImageSmall}/>
         </header>
     )

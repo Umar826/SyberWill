@@ -103,13 +103,8 @@ header {
 .backgroundImage {
     position: absolute;
     top: 0;
-    left: 33%;
-}
-
-.backgroundImageBig {
-    position: absolute;
-    top: 9%;
-    left: 57%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .backgroundImageMid {
@@ -124,8 +119,149 @@ header {
     left: 28%;
 }
 
+
+/* Big Image */
+
+.backgroundImageBig {
+    width: calc(var(--hex-side) * 1.732);
+    height: var(--hex-side);
+    background: #34133f;
+    position: relative;
+    transform: rotate(var(--hex-rotate));
+    position: absolute;
+    top: 14%;
+    left: 60%;
+    z-index: 1;
+    opacity: .5;
+  }
+  
+  .backgroundImageBig:before, 
+  .backgroundImageBig:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #34133f;
+    top: 0;
+    left: 0;
+  }
+  
+  .backgroundImageBig:before {
+    transform: rotate(60deg);
+  }
+  
+  .backgroundImageBig:after {
+    --hex-side: 50px;
+    transform: rotate(-60deg);
+  }
+  
+  :root{
+    --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
+}
+.backgroundImageBig:hover {
+    filter: blur(6px);
+    transition: 0.2s;
+}
+
+
+/* Mid Image */
+
+.backgroundImageMid {
+    width: calc(var(--hex-side) * 1.732);
+    height: var(--hex-side);
+    background: #34133f;
+    position: relative;
+    transform: rotate(var(--hex-rotate));
+    position: absolute;
+    top: 9%;
+    left: 33%;
+    width: 48px;
+    height: 80px;
+    z-index: 1;
+    opacity: .7;
+  }
+  
+  .backgroundImageMid:before, 
+  .backgroundImageMid:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #34133f;
+    top: 0;
+    left: 0;
+  }
+  
+  .backgroundImageMid:before {
+    transform: rotate(60deg);
+  }
+  
+  .backgroundImageMid:after {
+    transform: rotate(-60deg);
+  }
+  
+  :root{
+    --hex-side: 65px;
+    --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
+}
+.backgroundImageMid:hover {
+    filter: blur(2px);
+    transition: 0.2s;
+}
+
+
 @media screen and (max-width: 480px) {
     header {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .backgroundImageBig {
+        position: absolute;
+        top: 14%;
+        left: 60%;
+    }
+    
+    .backgroundImageMid {
+        position: absolute;
+        top: 11%;
+        left: 30%;
+    }
+    
+    .backgroundImageSmall {
+        position: absolute;
+        top: 34%;
+        left: 23%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .backgroundImageBig {
+        position: absolute;
+        top: 14%;
+        left: 63%;
+    }
+    
+    .backgroundImageMid {
+        position: absolute;
+        top: 9%;
+        left: 28%;
+    }
+    
+    .backgroundImageSmall {
+        position: absolute;
+        top: 34%;
+        left: 20.5%;
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+    .backgroundImageSmall {
+        position: absolute;
+        top: 34%;
+        left: 18.5%;
     }
 }
