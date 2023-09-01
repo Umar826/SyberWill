@@ -15,7 +15,18 @@ const Learn = () => {
                         <img src="./img/Frame 19.png" />
                     </div>
                     <h1 className={styles.title}>Help Desk</h1>
-                    <p className={styles.smallTitle}>Lorem ipsum dolor sit amet<br/> consectetur. Rhoncus<br/> tincidunt sapien volutpat</p>
+                    <div className={styles.buttonBlock}>
+                        <input type="text" placeholder="Your name" className={styles.email}/>
+                        <input type="text" placeholder="Your email" className={styles.email}/>
+                        <input type="text" placeholder="Your phone" className={styles.email}/>
+                    </div>
+                    <div className={styles.underBlock}>
+                        <div className={styles.grid}>
+                            <button className={styles.pointButton} />
+                            <p className={styles.underTitle}><a className={styles.span}>privacy policy</a> agreement</p>
+                        </div>
+                        <button className={styles.sendInput}>Send</button>
+                    </div>
                 </div>
 
                 <div className={styles.blockTwo}>
@@ -27,7 +38,7 @@ const Learn = () => {
                         <img src="./img/Frame 19 (1).png" className={styles.adaptiveImageNone}/>
                     </div>
                     <h1 className={styles.title}>Blog FQ</h1>
-                    <p className={styles.smallTitle}>Lorem ipsum dolor sit amet<br/> consectetur. Rhoncus<br/> tincidunt sapien volutpat</p>
+                    <p className={styles.smallTitle}>Latest releases and annoncment</p>
                 </div>
 
                 <div className={styles.blockThree}>
@@ -38,10 +49,11 @@ const Learn = () => {
                         <img src="./img/Frame 19 (2).png" />
                     </div>
                     <h1 className={styles.title}>Live Support</h1>
-                    <p className={styles.smallTitle}>Lorem ipsum dolor sit amet<br/> consectetur. Rhoncus<br/> tincidunt sapien volutpat</p>
+                    <a href='#'><button className={styles.flexButton}>Go to Telegram <img src='./img/envelope (1).png' /></button></a>
                 </div>
-
-            </div>
+               
+            </div> 
+            <a href='#'><button className={styles.flexButtonOne}>Contact Us</button></a>
         </section>
     )
 }

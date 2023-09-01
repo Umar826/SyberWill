@@ -16,12 +16,12 @@ const Header = () => {
                 <div className={styles.bottom_block}>
                     <button className={styles.button}>Log In</button>
                     <button className={styles.button}>Sign In</button>
-                    <img src="./img/Frame6.png"/>
+                    
                 </div>
             </div>
             <div className={styles.nameBlock}>
                 <h1 className={styles.subtitle}>Platform for secure storage and inheritance of digital assets</h1>
-                <p className={styles.title}>Lorem ipsum dolor sit amet consectetur. Rhoncus tincidunt sapien volutpat</p>
+                <p className={styles.title}>Our Mission is to guarantee a secure transfer of your wealth to the heirs</p>
                 <HeaderButton />
             </div>
 

@@ -1,0 +1,219 @@
+.block {
+    width: 1181px;
+    height: 513px;
+    background-color: #00042C;
+    border-radius: 15px;
+}
+
+.clbtn7 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left: 1100px;
+    padding-top: 15px;
+}
+.clbtn7:before {
+    content: '+';
+    color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.clbtn7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.clbtn7:hover:after {
+    transform: scale(1);
+}
+.clbtn7:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+
+.subtitle {
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.email {
+    width: 824px;
+    height: 60px;
+    top: 1940px;
+    left: 921px;
+    border-radius: 15px;
+    border: 1px solid #03E7D9;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.email::placeholder {
+    color: #FFFFFF;
+}
+
+.emailOne {
+    width: 824px;
+    height: 60px;
+    padding-bottom: 30px;
+    top: 1940px;
+    left: 921px;
+    border-radius: 15px;
+    border: 1px solid #03E7D9;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.emailOne::placeholder {
+    color: #FFFFFF;
+}
+
+.buttonBlock {
+    justify-content: center;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.underBlock {
+    display: flex;
+    margin: 0 auto;
+    gap: 37rem;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.grid {
+    display: grid;
+}
+
+.pointButton {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #03E7D9;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+}
+
+.underTitle {
+    font-family: Sora;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.span {
+    text-decoration: underline;
+    color: #03E7D9;
+}
+
+.sendInput {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    width: 73px;
+    height: 40px;
+    border: 1px solid #03E7D9;
+    color: #03E7D9;
+    border-radius: 15px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sendInput:hover {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    width: 73px;
+    height: 40px;
+    border: 1px solid #03E7D9;
+    color: black;
+    background-color: #03E7D9;
+    border-radius: 15px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        width: 370px;
+        height: 570px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .clbtn7 {
+        margin-left: 320px;
+    }
+    .email {
+        width: 328px;
+    }
+    .emailOne {
+        width: 328px;
+    }
+    .underBlock {
+        gap: 5.5rem;
+    }
+}

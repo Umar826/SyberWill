@@ -3,7 +3,7 @@
 header {
     max-width: 100%;
     height: 850px;
-    background-image: url('../../../public/img/Frame1.png');
+    background-image: url('../../../public/img/Frame 1 (2).png');
     background-position: center center;      
     background-repeat: no-repeat;      
     background-attachment: fixed;      
@@ -83,6 +83,7 @@ header {
     line-height: 25px;
     letter-spacing: 0em;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .headButton {
@@ -159,8 +160,8 @@ header {
     --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
 }
 .backgroundImageBig:hover {
-    filter: blur(6px);
-    transition: 0.2s;
+    filter: blur(30px);
+    transition: 1s;
 }
 
 
@@ -205,9 +206,10 @@ header {
     --hex-rotate: 30deg; /* угол наклона шестиугольника относительно центра */
 }
 .backgroundImageMid:hover {
-    filter: blur(2px);
-    transition: 0.2s;
+    filter: blur(5px);
+    transition: 1s;
 }
+
 
 
 @media screen and (max-width: 480px) {

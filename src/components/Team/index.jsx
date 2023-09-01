@@ -22,6 +22,10 @@ const Team = () => {
                     return <TeamItem icon={item.icon} subtitle={item.subtitle} title={item.title} text={item.text} />
                 }))}
             </div>
+            <p className={styles.title}>Our team have led and delivered large-scale software and design<br/>
+            projects in multiple startups and high-growth environments like CBG, Groupon, Kaspersky Lab and among others</p>
+            <img src="./img/black2.png"  className={styles.absoluteImageOne}/>
+            <img src="./img/black1.png"  className={styles.absoluteImageTwo}/>
         </section>
     )
 }

@@ -9,7 +9,7 @@
     text-align: center;
     margin: 0 auto;
     color: #FFFFFF;
-    padding-top: 190px;
+    padding-top: 100px;
 }
 
 .flex {
@@ -23,11 +23,52 @@
     margin-bottom: 25px;
 }
 
+.title {
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.absoluteImageOne {
+    position: absolute;
+    top: 3780px;
+    left: 18%;
+}
+
+.absoluteImageTwo {
+    position: absolute;
+    top: 3960px;
+    left: 84%;
+}
+
+@media screen and (max-width: 1550px) {
+    .absoluteImageOne {
+        left: 15%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .flex {
         display: none;
     }
     .subtytle {
-        padding-top: 80px;
+        padding-top: 150px;
+    }
+    .title {
+        display: none;
+    }
+    .absoluteImageOne {
+        left: 65%;
+        top: 4190px; 
+    }
+    .absoluteImageTwo {
+        left: 65%;
+        top: 4690px; 
     }
 }

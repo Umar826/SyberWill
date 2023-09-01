@@ -102,12 +102,23 @@
 
 @media screen and (max-width: 480px) {
     .aboutUs {
-        height: 940px;
+        height: 1040px;
         background-image: url('../../../public/img/phone123.png');
     }
     .underBlock {
         gap: 1rem;
         margin-top: 50px;
+    }
+    .absoluteButton {
+        width: 187px;
+        height: 95px;
+        top: 800px;
+        font-size: 28px;
+        padding: 0;
+    }
+    .underBlock {
+        gap: 3rem;
+        display: block;
     }
 }
 

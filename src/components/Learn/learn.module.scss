@@ -24,7 +24,7 @@
 .blockOne {
     background: #FFFFFF4D;
     width: 337px;
-    height: 250px;
+    height: 449px;
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 120px;
@@ -103,6 +103,175 @@
     display: none;
 }
 
+.email {
+    width: 260px;
+    height: 60px;
+    top: 1940px;
+    left: 921px;
+    border-radius: 15px;
+    border: 1px solid #03E7D9;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.email::placeholder {
+    color: #FFFFFF;
+}
+
+.buttonBlock {
+    justify-content: center;
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
+.underBlock {
+    display: flex;
+    margin: 0 auto;
+    gap: 1.4rem;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.grid {
+    display: grid;
+}
+
+.pointButton {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #03E7D9;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+}
+
+.underTitle {
+    font-family: Sora;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.span {
+    text-decoration: underline;
+    color: #03E7D9;
+}
+
+.sendInput {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    width: 73px;
+    height: 40px;
+    border: 1px solid #03E7D9;
+    color: #03E7D9;
+    border-radius: 15px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sendInput:hover {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    width: 73px;
+    height: 40px;
+    border: 1px solid #03E7D9;
+    color: black;
+    background-color: #03E7D9;
+    border-radius: 15px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.flexButton {
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    border-radius: 50px;
+    border: 1px;
+    gap: 15px;
+    border: 1px solid;
+    margin: 0 auto;
+    color: #03E7D9;
+    border-color: #03E7D9;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: 0.4s;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.flexButtonOne {
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    border-radius: 50px;
+    border: 1px;
+    gap: 15px;
+    border: 1px solid;
+    margin: 0 auto;
+    color: #03E7D9;
+    border-color: #03E7D9;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: 0.4s;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3178px;
+}
+
+.flexButton:hover {
+    color: black;
+    border-color: #03E7D9;
+    background-color: #03E7D9;
+}
+
+.flexButtonOne:hover {
+    color: black;
+    border-color: #03E7D9;
+    background-color: #03E7D9;
+}
+
 @media screen and (max-width: 480px) {
     .block {
         display: grid;
@@ -147,5 +316,8 @@
     }
     .adaptiveImageNone {
         display: none;
+    }
+    .flexButtonOne {    
+        top: 3878px;
     }
 }

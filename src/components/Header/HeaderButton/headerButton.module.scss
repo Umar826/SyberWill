@@ -11,4 +11,96 @@
     box-shadow: -18.600000381469727px 18.600000381469727px 18.600000381469727px 0px #FFFFFF1A inset;
     box-shadow: 18.600000381469727px -18.600000381469727px 18.600000381469727px 0px #A5A5A51A inset;
     cursor: pointer;
+    justify-content: center;
+    opacity: 1;
+}
+
+.flex1 {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    transition: ease 0.5s;
+    top: 625px;
+    left: 50.4%;
+}
+
+.flex2 {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    transition: ease 0.5s;
+    top: 645px;
+    left: 49.5%;
+}
+
+.flex3 {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    transition: ease 0.5s;
+    top: 665px;
+    left: 49.5%;
+}
+
+.flex4 {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    transition: ease 0.5s;
+    top: 680px;
+    left: 47.8%;
+}
+
+.flex5 {
+    display: flex;
+    gap: 0.8rem;
+    position: absolute;
+    transition: top ease 0.5s;
+    top: 695px;
+    left: 48.7%;
+}
+
+.headButton:hover .flex1{
+    top: 695px;
+    left: 48.7%;
+}
+.headButton:hover .flex2{
+    top: 695px;
+    left: 48.7%;
+}
+.headButton:hover .flex3{
+    top: 695px;
+    left: 48.7%;
+}
+.headButton:hover .flex4{
+    top: 695px;
+    left: 48.7%;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+    display: none;
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out;
+}
+
+.headButton:hover .subtitle {
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
 }

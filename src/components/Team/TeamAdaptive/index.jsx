@@ -20,6 +20,8 @@ const TeamAdaptive = () => {
                     <p className={styles.text}>Ramin is cybersecurity expert with more than 14 year of experience in many large companies. Since 2016 he has deeply immersed in business development and strategic management a lot of digital projects.</p>
                 </div>
             </div>
+            <p className={styles.underTitle}>Our team have led and delivered large-scale software and design
+            projects in multiple startups and high-growth environments like CBG, Groupon, Kaspersky Lab and among others</p>
         </div>
     )
 }

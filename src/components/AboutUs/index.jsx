@@ -8,16 +8,16 @@ import React from 'react';
 
 const aboutData = [
     {
-        icon: image1, title: "Company", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+        icon: image1, title: "Company", text: "HQ Dubai", 
     },
     {
-        icon: image2, title: "Referal", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+        icon: image2, title: "Referal", text: "Coming soon", 
     },
     {
-        icon: image3, title: "Careers", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+        icon: image3, title: "Careers", text: "See the list of our open positions", 
     },
     {
-        icon: image4, title: "Docs", text: "Lorem ispum dolor sit amet consectetur. Pulvinar", 
+        icon: image4, title: "Docs", text: "WhitePaper(coming soon), Litepaper(coming soon)", 
     }
 ]
 
